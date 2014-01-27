@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--	
+Hey, why are you here?
+You aren't supposed to see this.
+That's okay please stay.
+-->
+	
+<html>
+	<head>
+		<meta name="description" content="A site about Michael Burnie."/>
+		<meta name="author" content="Michael Burnie"/>
+		<meta name="keywords" content="Michael Burnie, HTML, CSS, JavaScript, JQuery, programming">
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="files/css/styles-main.css"/>
+		<link href="http://fonts.googleapis.com/css?family=Fauna+One|Roboto+Slab" rel="stylesheet" type="text/css">
+		<title>Michael Burnie</title>
+		<!--Google Analytics start; I am tracking YOU! HAHA!-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-45083352-1', 'michaelburnie.com');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--Google Analytics end-->
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<h1>Michael Burnie</h1>
+				<nav>
+					<ul>
+						<li><a href="#section-1" class="current" id="nav-1">Home</a></li>
+						<li><a href="#section-2" id="nav-2">About</a></li>
+						<li><a href="#section-3" id="nav-3">Projects</a></li>
+						<li><a href="#section-4" id="nav-4">Contact</a></li>
+						<li><a href="#section-5" id="nav-5">Games</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="content">
+				<div class="subcontent" id="section-1">
+					<h2>Hello World</h2>
+					<p>This site is about me, Michael Burnie. Michael Burnie Michael Burnie Michael Burnie. There Google, front page me please.</p>
+					
+					<h3>What am I doing?</h3>
+					<p>Trying to think of what I can do on this website. Right now I am using it to learn
+					JavaScript and <strong>jQuery</strong>. I wish to experiment with several jQuery effects as well as plugins 
+					of which many generous developers have kindly provided online.</p>
+					
+					<p>The following is a list of the plugins I am currently using or have used on this site previously:</p>
+					<ul>
+						<li><a href="http://imakewebthings.com/jquery-waypoints/" target="_blank">Caleb Troughton's Waypoints</a></li>
+						<li><a href="http://www.jacklmoore.com/zoom/" target="_blank">Jack Moore's jQuery Zoom</a></li>
+						<li><a href="http://trevordavis.net/blog/jquery-one-page-navigation-plugin" target="_blank">Trevor Davis' One Page Nav</a></li><!--This guy's pic jumped out at me. I clicked 'about' and I was like "Whoa, hey there designer dude."-->
+						<li><a href="http://demos.flesler.com/jquery/scrollTo/" target="_blank">Ariel Flesler's ScrollTo</a>
+					</ul>	
+
+					<p><em>Special thanks to <a href="http://subtlepatterns.com/" target="_blank">Subtle Patterns</a> and <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>.</em></p>
+					
+					<p>I'm also looking into <strong>responsive web design</strong>. I find the simpler sites to be the most appealing, which is why I have everything on one page;
+					however, as you can see	from the state of this site, I don't really have an eye for design&#8212;I am a programmer after all. If you have ideas on how to improve my site, let me know!</p>
+				</div>
+				<div class="subcontent" id="section-2">
+					<h2>About Me</h2>
+					
+					<p>I'm Canadian. I'm in college for Computer Programming. I'm currently working for an eCommerce business.
+					Check out my <a href="http://ca.linkedin.com/pub/michael-burnie/52/a69/984" target="_blank">LinkedIn profile</a>, you know, if you want...</p>
+					
+					<p>Did you expect a wall of text with all of my interests, what my daily life is like, what I eat and a list of my greatest fears? Probably not.
+					This isn't a dating site. So I'm not putting that stuff here.
+					<!--Not that my life is interesting anyway. Did you want to learn more about me? I'd be happy to talk! OH GOD I'M SO LONELY--></p>
+				</div>
+				<div class="subcontent" id="section-3">
+					<h2>Current Projects</h2>
+					
+					<p>This website. That's about it, really. I'd like more programming-related work but I'm in between a full time job and college.</p>
+					
+					<p>It doesn't make sense that I've made this site for professional purposes and yet I'm coming off as totally unprofessional. 
+					Anyways if you have a job for a fairly inexperienced programmer looking to prove himself, feel free to contact me.</p>
+				</div>
+				<div class="subcontent" id="section-4">
+					<h2>Contact Me</h2>
+					
+					<p>Email me at: <a href="mailto:contact@michaelburnie.com">contact@michaelburnie.com</a></p>
+					
+					<p>No, I don't have one of those cool php email textarea majiggers. That would make too much sense. What a cool email though! 
+					I'm surprised I haven't had dozens of job offers just because of that email.</p>
+					
+					<p>Oh yeah, and here's my <a href="http://ca.linkedin.com/pub/michael-burnie/52/a69/984" target="_blank">LinkedIn profile</a> in case you missed it earlier.</p>
+				</div>
+				<div class="subcontent" id="section-5">
+					<h2>Games and Stuff</h2>
+					<p>I got bored and started programming some very simple games. <!--start lies-->You may think these games are just a way to pad the content on my webpage,
+					but I can assure you, this is not the case. Much like this sentence, everything on this page has meaning.<!--end lies--></p>
+					<div id="games">
+						<div id="math-game" class="game">
+							<h3>Math Game</h3>
+							<p>Answer the following question made from pseudo-randomness:</p>
+
+							<div id="math-button-list">
+								<button id="btnMathEasy" class="btn-selected">Easy</button>
+								<button id="btnMathMedium">Medium</button>
+								<button id="btnMathHard">Hard</button>
+							</div>
+							<div id="math-question"></div>
+							<input type="text" name="user-answer" id="txtAnswer" size="10" maxlength="6"/>
+							<div id="math-correct-answers"></div>
+						</div>
+						<div id="text-modifier" class="game">
+							<h3>Text Modifiers</h3>
+							<p id="modifier-instructions">Please select a modifier type and click the button below:</p>
+							<ul id="modifier-radio-list">
+								<li><input type="radio" name="radModifierList" id="radThirdPerson" class="radio-button" checked> Third Person</input></li>
+								<li><input type="radio" name="radModifierList" id="radBasically" class="radio-button"> Other/Inside Joke</input></li>
+							</ul>
+							<button id="btnTextModifier">Activate Text Modifier!</button>
+							<button id="btnRefresh">This is weird! Go back to normal!</button>
+						</div>
+						<div id="divGameCanvas" class="game">
+							<h3>HTML 5 Game</h3>
+							<p>I have a passion for games. Ergo, I would like to make a game. So I thought, 'why not make it using HTML5?'</p>
+							<p><em>I'm just adding stuff as I learn, so this is very much <strong>Work in Progress!</strong></em></p>
+							<p><strong>This is currently disabled until I find more time to work on it!</strong></p>
+							<!--<button id="btnShowGame">Show Game</button>	-->						
+						</div>
+					</div>
+				</div>
+			</div><!--content end-->
+			<div id="footer">
+				<p>For the record, this isn't some college assignment I procrastinated on&#8212;although it may look like it.</p>
+				<p>&copy; 2013 Michael Burnie</p>
+				<!--It's silly that I even put these comments in. I pretend that nobody is going to read these, but really I hope people do. Is that sad? Yeah. Well I put the effort of adding them.
+				Are they at least a little funny? Or just sad? Probably just sad.-->
+				<ul id="socialList">
+					<li>
+						<a href="https://twitter.com/mburnie91" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @mburnie91</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</li>
+					<!--Silly LinkedIn plugin won't work for me
+					<li>
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+						<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/michael-burnie/52/a69/984" data-format="click" data-text="Michael Burnie" data-related="false"></script>
+					</li>
+					-->
+				</ul>
+			</div><!--footer end-->
+		</div><!--page end-->
+		<!--My script imports. Stay away!-->
+		<script src="files/js/jquery-1.9.1.min.js"></script>
+		<script src="files/js/jquery-main.js"></script>
+		<script src="files/js/jquery.nav.js"></script>
+		<script src="files/js/jquery.scrollTo.js"></script>
+		<!--<script src="files/js/jquery.zoom.js"></script>-->
+		<!--<script src="files/js/waypoints.min.js"></script>-->
+		<!--<script src="files/js/waypoints-sticky.js"></script>-->
+
+	</body>
+</html>

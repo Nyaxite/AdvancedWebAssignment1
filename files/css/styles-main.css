@@ -1,0 +1,246 @@
+/* GENERAL */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html
+{
+	font-family: 'Roboto Slab', Georgia, serif;
+	background: #DDD url('../images/scribble_light.png') repeat center fixed;
+	color: #3B3B3B;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color: #06F;
+}
+
+ul li 
+{
+	list-style: none;
+}
+
+/* HEADER, FOOTER */
+
+#header, #footer
+{
+	width: 100%;
+	background: #333 url('../images/irongrip.png') repeat center fixed;
+}
+
+#header
+{
+	position: fixed;
+	border-bottom: 1px solid #DDD;
+	height: 50px;
+}
+
+#footer
+{
+	color: #DDD;
+	padding: 10px 0;
+	border-top: 1px solid #DDD;
+	text-align: center;
+	font-size: 90%;
+}
+
+h1
+{
+	font-size: 42px;
+	color: white;
+	float: left;
+	padding-left: 1%;
+}
+
+h2
+{
+	text-align: center;
+}
+
+h2, h3
+{
+	padding: 10px 0px 10px 0px;
+	color: #333;
+}
+
+/* NAVIGATION */
+
+nav ul
+{
+	font-weight: bold;
+	list-style-type:none;
+	font-size: 120%;
+	float: right;
+	padding-top: 10px;
+	padding-right: 1%;
+}
+
+nav ul li
+{
+	display: inline;
+}
+
+nav a
+{
+	padding: 10px;
+	color: #DDD;
+}
+
+nav a:hover, nav .current a:hover
+{
+	text-decoration: underline;
+}
+
+nav .current a 
+{
+	color: #FFF;
+}
+
+/* CONTENT */
+
+#content strong{
+	color: #333;
+}
+
+#content
+{
+	max-width: 60%;
+	margin: 0px auto;
+	padding: 60px 20px 20px 20px;
+	min-height: 1000px;
+	background: #FFF url('../images/dust.png') repeat center fixed;
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+}
+
+.subcontent
+{
+	border-bottom: 1px solid #AAA;
+}
+
+#content p, #content ul
+{
+	font: 100% 'Fauna One', Georgia, serif;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	line-height: 28px;
+}
+
+#content ul
+{
+	padding-left: 40px;
+	border-radius: 4px;
+}
+
+#content li
+{
+	list-style-type: none;
+}
+
+#content a:hover
+{
+	color: #F60;
+}
+
+/* GAMES */
+
+#games
+{
+	text-align: center;
+}
+
+.game
+{
+	width: 45%;
+	display: inline-block;
+	padding: 2%;
+	vertical-align: top;
+}
+
+#math-question
+{
+	font-size: 30px;
+}
+
+#math-button-list
+{
+	display: inline;
+}
+
+#text-modifier ul
+{
+	text-align: left;
+}
+
+canvas
+{
+	border: 1px solid black;
+}
+
+/* OTHER */
+
+.zoom 
+{
+	display:inline-block;
+	position: relative;
+}
+	
+.zoom img 
+{
+	display: block;
+}
+
+.zoom img::selection 
+{ 
+	background-color: transparent; 
+}
+
+.sticky-element.stuck 
+{
+	position:fixed;
+	top:0;
+	z-index: 1;
+}
+
+#socialList 
+{
+	position: fixed;
+	right: 5px;
+	bottom: 10px;
+}
+
+/* Start button */
+button 
+{
+	padding: 2%;
+	background: #333;
+	color: #CCC;
+	border: 1px solid #AAA;
+	border-radius: 6px;
+	font-weight: bold;
+	font: 100% 'Fauna One', serif;
+}
+button:hover 
+{
+	color: #FFF;
+}
+
+button.btn-selected
+{
+	background: #CCC;
+	color: #333;
+	top:1px;
+}
+
+button:active
+{
+	background: #555;
+}
+/* End button */
