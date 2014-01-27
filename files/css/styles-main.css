@@ -209,13 +209,6 @@ canvas
 	z-index: 1;
 }
 
-#socialList 
-{
-	position: fixed;
-	right: 5px;
-	bottom: 10px;
-}
-
 /* Start button */
 button 
 {
