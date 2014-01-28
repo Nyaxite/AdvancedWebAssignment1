@@ -11,20 +11,15 @@ html
 	color: #3B3B3B;
 }
 
-img
-{
-	max-width: 100%;
-}
-
 a
 {
 	text-decoration: none;
 	color: #06F;
 }
 
-ul li 
+img
 {
-	list-style: none;
+	max-width: 100%;
 }
 
 /* HEADER, FOOTER */
@@ -137,11 +132,6 @@ nav .current a
 {
 	padding-left: 40px;
 	border-radius: 4px;
-}
-
-#content li
-{
-	list-style-type: none;
 }
 
 #content a:hover

@@ -40,7 +40,7 @@ function checkScreenWidth()
 		$("nav").find('*').removeAttr('style');
 	}
 	
-	if($(window).width() < 450)
+	if($(window).width() < 430)
 	{
 		$("nav").hide();
 	}
