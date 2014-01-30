@@ -1,3 +1,10 @@
+/***
+File: styles-main.css
+Author: Michael Burnie
+Website: www.michaelburnie.com
+Description: These are the main CSS styles for my website.
+***/
+
 /* GENERAL */
 *{
 	margin: 0px;
@@ -20,6 +27,15 @@ a
 img
 {
 	max-width: 100%;
+	margin:5px;
+	padding: 5px;
+	border:1px solid #AAA;
+	border-radius: 5px;
+}
+
+li
+{
+	list-style-type: none;
 }
 
 /* HEADER, FOOTER */
@@ -85,7 +101,7 @@ nav ul li
 nav a
 {
 	padding: 10px;
-	color: #DDD;
+	color: #AAA;
 }
 
 nav a:hover, nav .current a:hover
@@ -139,6 +155,26 @@ nav .current a
 	color: #F60;
 }
 
+#logo
+{
+	border: none;
+}
+
+#ninja-slider 
+{
+	max-width: 600px; 
+}
+
+#cv li
+{
+	list-style-type: square;
+}
+
+.project-section
+{
+	clear: both;
+}
+
 /* GAMES */
 
 #games
@@ -156,7 +192,7 @@ nav .current a
 
 #math-question
 {
-	font-size: 30px;
+	font-size: 3em;
 }
 
 #math-button-list

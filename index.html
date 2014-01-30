@@ -39,24 +39,25 @@ That's okay please stay.</haiku>
 				<h1>Michael Burnie</h1>
 				<nav>
 					<ul>
-						<li><a href="#section-1" id="nav-1" class="current">Home</a></li>
-						<li><a href="#section-2" id="nav-2">About</a></li>
-						<li><a href="#section-3" id="nav-3">Projects</a></li>
-						<li><a href="#section-4" id="nav-4">Services</a></li>
-						<li><a href="#section-5" id="nav-5">Contact</a></li>
+						<li><a href="#home" id="nav-1" class="current">Home</a></li>
+						<li><a href="#about" id="nav-2">About</a></li>
+						<li><a href="#projects" id="nav-3">Projects</a></li>
+						<li><a href="#services" id="nav-4">Services</a></li>
+						<li><a href="#contact" id="nav-5">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div id="content">
-				<div class="subcontent" id="section-1">
+				<div class="subcontent" id="home">
 					<h2>Hello World</h2>
-					<img src="files/images/mblogo.png" alt="Michael Burnie Logo" align="left" />
+					
+					<img id="logo" src="files/images/mblogo.png" alt="Michael Burnie Logo" align="left" />
 					<p>My name is Michael Burnie, and this is my website. Welcome! <strong>I am a dedicated IT professional seeking additional knowledge and experience to achieve success in my field.</strong>
 					The IT field is always expanding, and I plan to take advantage of any opportunity I can get. IT is also becoming a part of just about every field out there, and it's bringing everyone
 					along by making technology accessible. I've always had a strong inclination towards technology and science, and IT is the culmination of those branches.</p>
 					
 					<h3>What am I doing?</h3>
-					<p>See my <a href="#section-3">Current Projects</a>! Right now I am using my website to learn JavaScript and <strong>jQuery</strong>. 
+					<p>See my <a href="#projects">Current Projects</a>! Right now I am using my website to learn JavaScript and <strong>jQuery</strong>. 
 					I wish to experiment with several jQuery effects as well as plugins of which many generous developers have kindly provided online.</p>
 					
 					<p>The following is a list of the plugins I am currently using or have used on this site previously:</p>
@@ -73,10 +74,13 @@ That's okay please stay.</haiku>
 					<p>I'm also looking into <strong>responsive web design</strong>. I find the simpler sites to be the most appealing, which is why I have everything on one page;
 					however, as you can see	from the state of this site, I don't really have an eye for design&#8212;I am a programmer after all. If you have ideas on how to improve my site, let me know!</p>
 					
-					<h3>Keep Connected!</h3>
-					<p>Feel free to get connected with me!</p>
+					<h3>Social Networking</h3>
+					<p>Feel free to get connected with me through the following social networks:</p>
 					<ul id="socialList">
-						<li><a href="http://ca.linkedin.com/pub/michael-burnie/52/a69/984" target="_blank">LinkedIn profile</a></li>
+						<li>
+							<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+							<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/michael-burnie/52/a69/984" data-format="click" data-text="Michael Burnie"></script>
+						</li>
 						<li>
 							<a href="https://twitter.com/mburnie91" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @mburnie91</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -84,25 +88,69 @@ That's okay please stay.</haiku>
 						<li><a href="https://github.com/Nyaxite" target="_blank">Github profile</a></li>
 					</ul>
 					
-					<h3>Featured Work</h3>
-					<div id='ninja-slider'>
-						<ul>
-							<li><div data-image="files/images/diamond.png"></div></li>
-							<li><div data-image="files/images/redox.png"></div></li>
-							<li><div data-image="files/images/irongrip.png"></div></li>
-						</ul>
+					<div id="slider-wrapper">
+						<h3>Featured Work</h3>
+						<div id='ninja-slider'>
+							<ul>
+								<li>
+									<a href="#project-cms" data-image="files/images/project/cms.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Content Management System</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#project-orbituary" data-image="files/images/project/orbituary.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Orbituary</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#project-enterprise-computing" data-image="files/images/project/enterprise_computing.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Enterprise Computing</div>
+										</div>
+									</a>
+								</li>							
+								<li>
+									<a href="#project-monumental-math" data-image="files/images/project/monumental_math.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Monu-mental Math</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#project-slot-machine" data-image="files/images/project/slot_machine.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Slot Machine</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#project-side-scroller" data-image="files/images/project/side_scroller.png">
+										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
+											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
+											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Side Scroller</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="subcontent" id="section-2">
+				<div class="subcontent" id="about">
 					<h2>About Me</h2>
 					
 					<img src="files/images/officemike.png" alt="Michael Burnie" align="right" width="200px" />
 					
 					<p>I'm Canadian. I'm in college for Computer Programming. I'm currently working for an eCommerce business.
 					Check out my <a href="http://ca.linkedin.com/pub/michael-burnie/52/a69/984" target="_blank">LinkedIn profile</a>.</p>
-					
-					<p>Did you expect a wall of text with all of my interests, what my daily life is like, what I eat and a list of my greatest fears? Probably not.
-					This isn't a dating site. So I'm not putting that stuff here.</p>
 					
 					<div id="cv">
 						<h3>Curriculum Vitae</h3>
@@ -141,17 +189,78 @@ That's okay please stay.</haiku>
 						</ul>				
 					</div>
 				</div>
-				<div class="subcontent" id="section-3">
-					<h2>Current Projects</h2>
+				<div class="subcontent" id="projects">
+					<h2>Projects</h2>
+					<h3>Current Projects</h3>
+					<a href="files/ad.swf">
+						<img src="files/images/project/ad.png" alt="Flash Ad" align="right"/>
+					</a>
+					<p>As I finish my final year of college, I am into much larger projects. The main project this year will be my work with a local treats shop expanding into a provincial and national market.
+					I am the product owner of a team of six colleagues. We're redoing their entire site and including a complete web store. We've only just begun but I am very excited for this opportunity!</p>
 					
-					<p>This website. That's about it, really. I'd like more programming-related work but I'm in between a full time job and college.</p>
+					<p>Other projects include working with Flash for a 2D Animation course, and reworking this website for an Advanced Web course. No doubt this section will be even more full over the next few months! 
+					For one of my first assignments, I created a little Flash ad for one of my school's programs. Click the Georgian College logo to see its Flashy magnificence.</p>
 					
-					<p>It doesn't make sense that I've made this site for professional purposes and yet I'm coming off as totally unprofessional. 
-					Anyways if you have a job for a fairly inexperienced programmer looking to prove himself, feel free to contact me.</p>
+					<h3>Previous Projects and Assignments</h3>
+					<p>In this section, I've included many projects I've worked on throughout college. Many of them were fun experiences to me and full of programming no-no's. Nonetheless,
+					I've learned so much from each of them.</p>
+					<div class="project-section" id="project-cms">
+						<h4>Content Management System</h4>
+						<a href="http://webdesign4.georgianc.on.ca/~200198907/comp1006/assignment2/default.php">
+							<img src="files/images/project/cms.png" alt="Content Management System" align="right" width="400px" />
+						</a>
+						<p>One of my first major projects of college was to build a simple CMS with php. It ended up taking longer than I expected, but I had a lot more fun with it than expected too.
+						I struggled with the CSS because I didn't have much exposure to it. That's why I went crazy with the gradients.</p>
+					</div>
 					
+					<div class="project-section" id="project-orbituary">
+						<h4>Orbituary</h4>
+						<a href="https://github.com/Nyaxite/IntroToGraphicsProject1">
+							<img src="files/images/project/orbituary.png" alt="Orbituary" align="right" width="400px" />
+						</a>
+						<p>Orbituary was a game I made in Python along with a friend. It took of hard work and strange maths. My target for the game was to make it completely scalable;
+						for example, you can set the number of enemies that will appear on a given level, and the game will evenly distribute the enemeies throughout the level with a small
+						degree of randomness. The game didn't look great or play the best, but there are some good ideas about this project that I will remember.</p>
+					</div>
+					
+					<div class="project-section" id="project-enterprise-computing">
+						<h4>Enterprise Computing Web Application</h4>
+						<img src="files/images/project/enterprise_computing.png" alt="Enterprise Computing Web Application" align="right" width="400px" />
+						<p>My Enterprise Computing course focused on all of the aspects demonstrated by this project. Using C#, a friend and I created a web application demonstrating all of
+						the CRUD operations. We allowed a user to add cars, engines, and manufacturers into a database through a simple GUI. Unfortunately, this project was setup on
+						a temporary Windows Azure server, so I do not have a link to the working application.</p>
+					</div>
+					
+					<div class="project-section" id="project-monumental-math">
+						<h4>Monu-mental Math App</h4>
+						<a href="https://github.com/Nyaxite/ProjectTwo">
+							<img src="files/images/project/monumental_math.png" alt="Monu-mental Math" align="right" width="200px" />
+						</a>
+						<p>A friend and I created this simple Android app that has two game modes (Mental Math and Fleeting Figures) based around math. Using Java, we created this simple yet slightly addictive game to
+						test your quick thinking and memorization abilities.</p>
+					</div>
+					
+					<div class="project-section" id="project-side-scroller">
+						<h4>Side Scroller</h4>
+						<a href="https://github.com/Nyaxite/IntroToGraphicsAssignment4">
+							<img src="files/images/project/side_scroller.png" alt="Side Scroller" align="right" width="400px" />
+						</a>
+						<p>One of the simplest yet most fun games I made. This was also made with Python. You simply steer the red car with your pointer around obstacles such as wreckage and cars (both with and oncoming traffic).
+						You get bonuses for certain pickups, like a star that gives you invulnerability (wonder where I got that idea from).</p>
+					</div>
+					
+					<div class="project-section" id="project-slot-machine">
+						<h4>Slot Machine</h4>
+						<a href="https://github.com/Nyaxite/IntroToGraphicsAssignment2">
+							<img src="files/images/project/slot_machine.png" alt="Slot Machine" align="right" width="400px" />
+						</a>
+						<p>One last Python game I made using winning percentages based on actual slot machines. This slot machine is a simple and far less risky method of gambling than your standard machine.
+						It's also far more ugly, but it works!</p>
+					</div>
+					
+					<div class="project-section" id="games">
 					<h3>Minigames</h3>
 					<p>I got bored and started programming some very simple things with JavaScript.</p>
-					<div id="games">
 						<div id="math-game" class="game">
 							<h3>Math Game</h3>
 							<p>Answer the following question made from pseudo-randomness:</p>
@@ -175,18 +284,11 @@ That's okay please stay.</haiku>
 							<button id="btnTextModifier">Activate Text Modifier!</button>
 							<button id="btnRefresh">This is weird! Go back to normal!</button>
 						</div>
-						<!--<div id="divGameCanvas" class="game">
-							<h3>HTML 5 Game</h3>
-							<p>I have a passion for games. Ergo, I would like to make a game. So I thought, 'why not make it using HTML5?'</p>
-							<p><em>I'm just adding stuff as I learn, so this is very much <strong>Work in Progress!</strong></em></p>
-							<p><strong>This is currently disabled until I find more time to work on it!</strong></p>
-							<button id="btnShowGame">Show Game</button>					
-						</div>-->
 					</div>
 				</div>
-				<div class="subcontent" id="section-4">
+				<div class="subcontent" id="services">
 					<h2>Services</h2>
-					<p>I am an IT professional. I am exploring opportunities to find the most suitable job in this field for me, so I am more than willing to assist in any IT job I can find. 
+					<p>I am an IT professional. I am exploring opportunities to find the most suitable job in this field for me, so I am more than willing to take part in any IT job I can. 
 					I can provide consultation or programming services to the following:</p>
 					<h3>Programming</h3>
 					<p>I'm currently attending my third and final year at Georgian College for Computer Programming. I've learned basics of several programming languages and I'm earger to delve deeper into them.
@@ -201,13 +303,15 @@ That's okay please stay.</haiku>
 					<p>I've been given opportunities in at my current work to get a taste of Project Management. Alongside the Project Management course I've taken, I hope to eventually become a PMP once I've earned the
 					required hours.</p>
 				</div>
-				<div class="subcontent" id="section-5">
+				<div class="subcontent" id="contact">
 					<h2>Contact Me</h2>
-					<p>Email me at: <a href="mailto:contact@michaelburnie.com">contact@michaelburnie.com</a></p>
-					<p>No, I don't have one of those cool php email textarea majiggers. That would make too much sense. What a cool email though! 
-					I'm surprised I haven't had dozens of job offers just because of that email.</p>
+					<p>I'm located in Barrie, Ontario, Canada.</p>
+					<p>Email me at: <a href="mailto:contact@michaelburnie.com">contact@michaelburnie.com</a> or follow one of the social networks I have listed below:</p>
 					<ul id="socialList">
-						<li><a href="http://ca.linkedin.com/pub/michael-burnie/52/a69/984" target="_blank">LinkedIn profile</a></li>
+						<li>
+							<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+							<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/michael-burnie/52/a69/984" data-format="click" data-text="Michael Burnie"></script>
+						</li>
 						<li>
 							<a href="https://twitter.com/mburnie91" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @mburnie91</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -217,8 +321,7 @@ That's okay please stay.</haiku>
 				</div>
 			</div><!--content end-->
 			<div id="footer">
-				<!--<p>For the record, this isn't some college assignment I procrastinated on&#8212;although it may look like it.</p>-->
-				<p>&copy; 2013 Michael Burnie</p>
+				<p>&copy; 2014 Michael Burnie. All Rights Reserved.</p>
 			</div><!--footer end-->
 		</div><!--page end-->
 		<!--My script imports. Stay away!-->
@@ -227,8 +330,5 @@ That's okay please stay.</haiku>
 		<script type="text/javascript" src="files/js/jquery.nav.js"></script>
 		<script type="text/javascript" src="files/js/jquery.scrollTo.js"></script>
 		<script type="text/javascript" src="files/js/ninja-slider.js"></script>
-		<!--<script src="files/js/jquery.zoom.js"></script>-->
-		<!--<script src="files/js/waypoints.min.js"></script>-->
-		<!--<script src="files/js/waypoints-sticky.js"></script>-->
 	</body>
 </html>

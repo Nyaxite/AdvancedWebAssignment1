@@ -1,7 +1,12 @@
-﻿$(document).ready(function()
+﻿/*
+File: jquery-main.css
+Author: Michael Burnie
+Website: www.michaelburnie.com
+Description: This is the primary jQuery and JavaScript code for my website. Other plugins are generally called from this page.
+*/
+
+$(document).ready(function()
 {
-	/*$("#pic1").zoom().fadeTo(100, 0.7);*/
-	/*$(".sticky-element").waypoint('sticky');*/
 	$("nav").onePageNav();
 	checkScreenWidth();
 	mathQuestion();
@@ -16,10 +21,11 @@ $(window).on('resize', function()
 /* Checks for screen width and moves/hides/changes elements as required to make sure page looks alright on most resolutions. */
 function checkScreenWidth()
 {
-	if($(window).width() < 820)
+	if($(window).width() < 830)
 	{
 		var headerFontSize = 22;
 		var navFontSize = 15;
+		var navPaddingSize = 5;
 		
 		$("h1").css('font-size', headerFontSize+'px');
 		$("h1").css('float','none');
@@ -27,6 +33,7 @@ function checkScreenWidth()
 		$("h1").css('padding-left','0px');
 		
 		$("nav ul li a").css('font-size', navFontSize+'px');
+		$("nav ul li a").css('padding', navPaddingSize+'px');
 		$("nav ul").css('float','none');
 		$("nav ul").css('text-align','center');
 		$("nav ul").css('padding-top','0px');
@@ -40,7 +47,7 @@ function checkScreenWidth()
 		$("nav").find('*').removeAttr('style');
 	}
 	
-	if($(window).width() < 430)
+	if($(window).width() < 370)
 	{
 		$("nav").hide();
 	}
@@ -184,6 +191,7 @@ function createQuestion()
 
 ////////////////////////////////////////////////////////////////////////
 
+/*Modifies the text depending on which radio button is selected*/
 $("#btnTextModifier").click(function() 
 {
 	if($('#radThirdPerson').prop('checked'))
@@ -198,6 +206,7 @@ $("#btnTextModifier").click(function()
 	}
 });
 
+/*Determines which buttons are shown/hidden*/
 function modifierContentManager()
 {
 	$("#btnRefresh").show();
@@ -206,11 +215,13 @@ function modifierContentManager()
 	$("#modifier-instructions").hide();
 }
 
+/*Reload the page*/
 $("#btnRefresh").click(function() 
 {
 	location.reload();
 });
 
+/*Makes the text sound like I'm talking in third person*/
 function thirdPersonMode()
 {
 	$("p, h2, h3, h4").each(function() {
@@ -251,6 +262,7 @@ function thirdPersonMode()
 
 ////////////////////////////////////////////////////////////////////////
 
+/*Inside joke text modifier*/
 function basicallyMode()
 {	
 	$("p, h2, h3, h4").each(function() {
@@ -282,25 +294,6 @@ function randomReplace(text, occurence, beforeVal, afterVal)
 }
 
 ////////////////////////////////////////////////////////////////////////
-
-$("#btnShowGame").click(function() 
-{
-	drawCanvas();
-	$("#btnShowGame").hide();
-});
-
-function drawCanvas()
-{
-	var divGameCanvas = document.getElementById("divGameCanvas");
-	if(!document.getElementById("gameCanvas"))
-	{
-		var canvas = document.createElement("canvas");
-		canvas.id = 'gameCanvas';
-		canvas.width = 200;
-		canvas.height = 500;
-		divGameCanvas.appendChild(canvas);
-	}
-}
 
 
 
