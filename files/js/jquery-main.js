@@ -24,8 +24,8 @@ function checkScreenWidth()
 	if($(window).width() < 830)
 	{
 		var headerFontSize = 22;
-		var navFontSize = 15;
-		var navPaddingSize = 5;
+		var navFontSize = 13;
+		var navPaddingSize = 2;
 		
 		$("h1").css('font-size', headerFontSize+'px');
 		$("h1").css('float','none');
@@ -47,7 +47,7 @@ function checkScreenWidth()
 		$("nav").find('*').removeAttr('style');
 	}
 	
-	if($(window).width() < 370)
+	if($(window).width() < 305)
 	{
 		$("nav").hide();
 	}
