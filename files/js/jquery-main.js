@@ -11,6 +11,10 @@ $(document).ready(function()
 	checkScreenWidth();
 	mathQuestion();
 	$("#btnRefresh").hide();
+	$(".rslides").responsiveSlides({
+		speed: 500,
+		maxwidth: 600
+	});
 });
 
 $(window).on('resize', function()

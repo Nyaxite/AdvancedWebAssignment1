@@ -122,7 +122,7 @@ nav .current a
 
 #content
 {
-	max-width: 60%;
+	max-width: 70%;
 	margin: 0px auto;
 	padding: 60px 20px 20px 20px;
 	min-height: 1000px;
@@ -146,7 +146,7 @@ nav .current a
 
 #content ul
 {
-	padding-left: 40px;
+	padding-left: 20px;
 	border-radius: 4px;
 }
 
@@ -158,11 +158,6 @@ nav .current a
 #logo
 {
 	border: none;
-}
-
-#ninja-slider 
-{
-	max-width: 600px; 
 }
 
 #cv li
@@ -205,34 +200,30 @@ nav .current a
 	text-align: left;
 }
 
-canvas
-{
-	border: 1px solid black;
-}
-
 /* OTHER */
 
-.zoom 
+.rslides
 {
-	display:inline-block;
-	position: relative;
+	margin: 0 auto !important;
 }
-	
-.zoom img 
+
+.rslides .caption 
 {
 	display: block;
-}
-
-.zoom img::selection 
-{ 
-	background-color: transparent; 
-}
-
-.sticky-element.stuck 
-{
-	position:fixed;
-	top:0;
-	z-index: 1;
+	position: absolute;
+	z-index: 2;
+	text-shadow: none;
+	color: #fff;
+	background: rgba(0,0,0, .8);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	margin: 0;
+	max-width: none;
+	line-height: 20px !important;
+	text-align: center;
+	font-weight: bold !important;
 }
 
 /* Start button */

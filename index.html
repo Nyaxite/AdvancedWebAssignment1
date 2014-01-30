@@ -17,7 +17,7 @@ That's okay please stay.</haiku>
 		<meta name="keywords" content="Michael Burnie, HTML, CSS, JavaScript, JQuery, programming">
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="files/css/styles-main.css"/>
-		<link rel="stylesheet" type="text/css" href="files/css/ninja-slider.css"/>
+		<link rel="stylesheet" type="text/css" href="files/css/responsiveslides.css"/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fauna+One|Roboto+Slab">
 		<title>Michael Burnie</title>
 		<!--Google Analytics start; I am tracking YOU! HAHA!-->
@@ -69,7 +69,7 @@ That's okay please stay.</haiku>
 					</ul>	
 
 					<p><em>Special thanks to <a href="http://subtlepatterns.com/" target="_blank">Subtle Patterns</a>, <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>,
-					and <a href="http://www.menucool.com/responsive-slider.aspx" target="_blank">Ninja Slider</a>.</em></p>
+					and <a href="http://responsiveslides.com/" target="_blank">Responsive Slides</a>.</em></p>
 					
 					<p>I'm also looking into <strong>responsive web design</strong>. I find the simpler sites to be the most appealing, which is why I have everything on one page;
 					however, as you can see	from the state of this site, I don't really have an eye for design&#8212;I am a programmer after all. If you have ideas on how to improve my site, let me know!</p>
@@ -89,55 +89,36 @@ That's okay please stay.</haiku>
 					</ul>
 					
 					<div id="slider-wrapper">
-						<h3>Featured Work</h3>
-						<div id='ninja-slider'>
-							<ul>
+						<div class="rslides_container">
+							<ul class="rslides">
 								<li>
-									<a href="#project-cms" data-image="files/images/project/cms.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Content Management System</div>
-										</div>
+									<a href="#project-cms"><img src="files/images/project/cms.png" alt="">
+									<p class="caption">Content Management System</p>
 									</a>
 								</li>
 								<li>
-									<a href="#project-orbituary" data-image="files/images/project/orbituary.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Orbituary</div>
-										</div>
+									<a href="#project-orbituary"><img src="files/images/project/orbituary.png" alt="">
+									<p class="caption">Orbituary</p>
 									</a>
 								</li>
 								<li>
-									<a href="#project-enterprise-computing" data-image="files/images/project/enterprise_computing.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Enterprise Computing</div>
-										</div>
-									</a>
-								</li>							
-								<li>
-									<a href="#project-monumental-math" data-image="files/images/project/monumental_math.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Monu-mental Math</div>
-										</div>
+									<a href="#project-enterprise-computing"><img src="files/images/project/enterprise_computing.png" alt="">
+									<p class="caption">Enterprise Computing</p>
 									</a>
 								</li>
 								<li>
-									<a href="#project-slot-machine" data-image="files/images/project/slot_machine.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Slot Machine</div>
-										</div>
+									<a href="#project-monumental-math"><img src="files/images/project/monumental_math.png" alt="">
+									<p class="caption">Monumental Math</p>
 									</a>
 								</li>
 								<li>
-									<a href="#project-side-scroller" data-image="files/images/project/side_scroller.png">
-										<div style="position:absolute;width:100%;height:36px;top:auto;bottom:0px;">
-											<div style="position:absolute;width:100%;top:0;line-height:36px;background:#000;opacity:0.8;">&nbsp;</div>
-											<div style="position:absolute;width:100%;top:0;line-height:36px;text-align:center;color:#FFF;font:bold 18px/36px Verdana;">Side Scroller</div>
-										</div>
+									<a href="#project-coin-collector"><img src="files/images/project/side_scroller.png" alt="">
+									<p class="caption">Coin Collector</p>
+									</a>
+								</li>
+								<li>
+									<a href="#project-slot-machine"><img src="files/images/project/slot_machine.png" alt="">
+									<p class="caption">Slot Machine</p>
 									</a>
 								</li>
 							</ul>
@@ -234,19 +215,19 @@ That's okay please stay.</haiku>
 					<div class="project-section" id="project-monumental-math">
 						<h4>Monu-mental Math App</h4>
 						<a href="https://github.com/Nyaxite/ProjectTwo">
-							<img src="files/images/project/monumental_math.png" alt="Monu-mental Math" align="right" width="200px" />
+							<img src="files/images/project/monumental_math.png" alt="Monu-mental Math" align="right" width="400px" />
 						</a>
 						<p>A friend and I created this simple Android app that has two game modes (Mental Math and Fleeting Figures) based around math. Using Java, we created this simple yet slightly addictive game to
 						test your quick thinking and memorization abilities.</p>
 					</div>
 					
-					<div class="project-section" id="project-side-scroller">
-						<h4>Side Scroller</h4>
+					<div class="project-section" id="project-coin-collector">
+						<h4>Coin Collector</h4>
 						<a href="https://github.com/Nyaxite/IntroToGraphicsAssignment4">
 							<img src="files/images/project/side_scroller.png" alt="Side Scroller" align="right" width="400px" />
 						</a>
 						<p>One of the simplest yet most fun games I made. This was also made with Python. You simply steer the red car with your pointer around obstacles such as wreckage and cars (both with and oncoming traffic).
-						You get bonuses for certain pickups, like a star that gives you invulnerability (wonder where I got that idea from).</p>
+						Try to collect as many coins as you can before you inevitably explode (unless you're really good)! You get bonuses for certain pickups, like a star that gives you invulnerability (wonder where I got that idea from).</p>
 					</div>
 					
 					<div class="project-section" id="project-slot-machine">
@@ -329,6 +310,6 @@ That's okay please stay.</haiku>
 		<script type="text/javascript" src="files/js/jquery-main.js"></script>
 		<script type="text/javascript" src="files/js/jquery.nav.js"></script>
 		<script type="text/javascript" src="files/js/jquery.scrollTo.js"></script>
-		<script type="text/javascript" src="files/js/ninja-slider.js"></script>
+		<script type="text/javascript" src="files/js/responsiveslides.js"></script>
 	</body>
 </html>
